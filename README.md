@@ -7,21 +7,13 @@ Official Homebrew tap for [@mortalezz](https://github.com/mortalezz) projects.
 Install **Glance** via Homebrew Cask:
 
 ```bash
-brew install --cask mortalezz/tap/glance
+brew install --cask --no-quarantine mortalezz/tap/glance
 ```
 
-Or tap the repository first:
-
-```bash
-brew tap mortalezz/tap
-brew install --cask glance
-```
-
-## Available Casks
-
-| Cask | Description | Command |
-| :--- | :--- | :--- |
-| **Glance** | Ultra-fast native macOS image viewer & pro culling tool | `brew install --cask mortalezz/tap/glance` |
+> **Note:** The `--no-quarantine` flag bypasses macOS Gatekeeper's quarantine attribute on open-source, ad-hoc signed apps. If installed without it, run:
+> ```bash
+> xattr -cr /Applications/Glance.app
+> ```
 
 ## Updates
 
