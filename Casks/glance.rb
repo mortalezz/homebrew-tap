@@ -4,7 +4,7 @@ cask "glance" do
 
   url "https://github.com/mortalezz/glance/releases/download/v#{version}/Glance-v#{version}-macOS.zip"
   name "Glance"
-  desc "Ultra-fast native macOS image viewer & pro culling tool"
+  desc "Ultra-fast image viewer and pro culling tool"
   homepage "https://github.com/mortalezz/glance"
 
   livecheck do
