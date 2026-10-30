@@ -16,11 +16,6 @@ cask "glance" do
 
   app "Glance.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Glance.app"]
-  end
-
   zap trash: [
     "~/Library/Preferences/com.glance.mac.plist",
     "~/Library/Saved Application State/com.glance.mac.savedState",
