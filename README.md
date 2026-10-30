@@ -17,14 +17,18 @@ brew tap mortalezz/tap
 brew install --cask glance
 ```
 
-> **Gatekeeper:** The cask includes an automatic post-install step that clears the macOS download quarantine attribute so the app opens immediately without "unverified developer" warnings.
+## Updating
 
-## Updates
-
-To reinstall or update Glance:
+To update Glance to the latest release:
 
 ```bash
+brew update
 brew upgrade --cask glance
-# or to force reinstall:
-brew reinstall --cask glance
 ```
+
+*(Or to force reinstall: `brew reinstall --cask glance`)*
+
+> **First Launch:** On first launch, if macOS displays an *"unverified developer"* notice (as Glance is distributed outside the Mac App Store), simply **Right-Click `Glance.app` in `/Applications` ➔ Open** once, or run:
+> ```bash
+> xattr -cr /Applications/Glance.app
+> ```
